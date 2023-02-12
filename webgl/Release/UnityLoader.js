@@ -1131,7 +1131,7 @@ var Module;
                 function n(n) {
                     Module.finishedDataFileDownloads++, e(n, "Loading data file failed.");
                     var o = new Uint8Array(n);
-                    t.prototype.byteArray = o, t.prototype.requests["/data.unity3d"].onload(), t.prototype.requests["/methods_pointedto_by_uievents.xml"].onload(), t.prototype.requests["/preserved_derived_types.xml"].onload(), t.prototype.requests["/Il2CppData/Metadata/global-metadata.dat"].onload(), t.prototype.requests["/Resources/unity_default_resources"].onload(), t.prototype.requests["/Managed/mono/2.0/machine.config"].onload(), Module.removeRunDependency("datafile_webgl.data")
+                    t.prototype.byteArray = o, t.prototype.requests["/data.unity3d"].onload(), t.prototype.requests["/methods_pointedto_by_uievents.xml"].onload(), t.prototype.requests["/preserved_derived_types.xml"].onload(), t.prototype.requests["/Resources/unity_default_resources"].onload(), t.prototype.requests["/Managed/mono/2.0/machine.config"].onload(), Module.removeRunDependency("datafile_webgl.data")
                 }
                 Module.FS_createPath("/", "Il2CppData", !0, !0), Module.FS_createPath("/Il2CppData", "Metadata", !0, !0), Module.FS_createPath("/", "Resources", !0, !0), Module.FS_createPath("/", "Managed", !0, !0), Module.FS_createPath("/Managed", "mono", !0, !0), Module.FS_createPath("/Managed/mono", "2.0", !0, !0), t.prototype = {
                     requests: {},
@@ -1151,7 +1151,7 @@ var Module;
                             t.audio ? Module.removeRunDependency("fp " + t.name) : Module.printErr("Preloading file " + t.name + " failed")
                         }, !1, !0), this.requests[this.name] = null
                     }
-                }, new t(0, 11876543, 0, 0).open("GET", "/data.unity3d"), new t(11876543, 11876962, 0, 0).open("GET", "/methods_pointedto_by_uievents.xml"), new t(11876962, 11882807, 0, 0).open("GET", "/preserved_derived_types.xml"), new t(11882807, 14348407, 0, 0).open("GET", "/Il2CppData/Metadata/global-metadata.dat"), new t(14348407, 15223115, 0, 0).open("GET", "/Resources/unity_default_resources"), new t(15223115, 15250740, 0, 0).open("GET", "/Managed/mono/2.0/machine.config"), Module.addRunDependency("datafile_webgl.data"), Module.preloadResults || (Module.preloadResults = {}), Module.preloadResults[i] = {
+                }, new t(0, 11876543, 0, 0).open("GET", "/data.unity3d"), new t(11876543, 11876962, 0, 0).open("GET", "/methods_pointedto_by_uievents.xml"), new t(11876962, 11882807, 0, 0).open("GET", "/preserved_derived_types.xml"), new t(14348407, 15223115, 0, 0).open("GET", "/Resources/unity_default_resources"), new t(15223115, 15250740, 0, 0).open("GET", "/Managed/mono/2.0/machine.config"), Module.addRunDependency("datafile_webgl.data"), Module.preloadResults || (Module.preloadResults = {}), Module.preloadResults[i] = {
                     fromCache: !1
                 }, d ? (n(d), d = null) : l = n
             }
