@@ -1,4 +1,4 @@
-# Plastic Memories WebGL Demo 『プラスティック・メモリーズ』Web体験版
+# Plastic Memories WebGL Trial Version 『プラスティック・メモリーズ』Web体験版
 This Project aims to preserve and make the Plastic Memories Costume & Interaction Mode Web Demo, and hopefully add in the dialouge text from the
 Plastic Memories English Pacth released by the Isla Exacution Squad for PC and PS Vita.
 
