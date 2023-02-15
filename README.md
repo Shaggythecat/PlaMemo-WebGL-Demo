@@ -16,6 +16,6 @@ When trying to scroll the game will throw an error but will continue to run.
 ## Fixed Issues
 The game will not boot.
 
-### Disclamers
+## Disclamers
 This project is not associated with or authorized by MAGES./5pb. 
 Plastic Memories is owned by MAGES./5pb.
