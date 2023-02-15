@@ -6,7 +6,7 @@ Plastic Memories English Pacth released by the Isla Exacution Squad for PC and P
 
 ## Current Issues
 The demo was made for Unity WebGL 5.4.0, and as far as I can tell the data file is unmoddable due to metadata checks and a lack of tools that
-can mod WebGl games. Most likely global-metadata is located in the 'webgl.data' file, and one of the other files for the demo checks for global-metadata
+can mod WebGL games. Most likely global-metadata is located in the 'webgl.data' file, and one of the other files for the demo checks for global-metadata
 at a specific offset.
 
 When trying to scroll the game will throw an error but will continue to run.
