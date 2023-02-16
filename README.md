@@ -7,15 +7,15 @@ The demo can be accessed here: https://shaggythecat.github.io/PlaMemo-WebGL-Demo
 『プラスティック・メモリーズ』“ふれあい＆お着替えモード”のWeb体験版 (Japanese Title)
 
 ## Current Issues
-The demo was made for Unity WebGL 5.4.0, and as far as I can tell the data file is unmoddable due to metadata checks and a lack of tools that
+- The demo was made for Unity WebGL 5.4.0, and as far as I can tell the data file is unmoddable due to metadata checks and a lack of tools that
 can mod WebGL games. Most likely global-metadata is located in the 'webgl.data' file, and one of the other files for the demo checks for global-metadata
 at a specific offset.
 
-When trying to scroll the game will throw an error but will continue to run.
+- When trying to scroll the game will throw an error but will continue to run.
 
 ## Fixed Issues
-The game will not boot.
+- The game will not boot.
 
 ## Disclamers
-This project is not associated with or authorized by MAGES./5pb. 
-Plastic Memories is owned by MAGES./5pb.
+- This project is not associated with or authorized by MAGES./5pb. 
+- Plastic Memories is owned by MAGES./5pb.
