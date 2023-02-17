@@ -5,6 +5,8 @@ Plastic Memories English Pacth released by the Isla Exacution Squad for PC and P
 The demo can be accessed here: https://shaggythecat.github.io/PlaMemo-WebGL-Demo/webgl/index.html
 
 『プラスティック・メモリーズ』“ふれあい＆お着替えモード”のWeb体験版 (Japanese Title)
+###
+![image](https://user-images.githubusercontent.com/110912092/219759091-a48a26bf-c601-4555-b37f-6d4f7339e1ea.png)
 
 ## Current Issues
 - The demo was made for Unity WebGL 5.4.0, and as far as I can tell the data file is unmoddable due to metadata checks and a lack of tools that
