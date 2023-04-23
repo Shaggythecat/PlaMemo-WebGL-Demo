@@ -15,9 +15,6 @@ at a specific offset.
 
 - When trying to scroll the game will throw an error but will continue to run.
 
-## Fixed Issues
-- The game will not boot.
-
 ## Disclaimers
 - This project is not associated with or authorized by MAGES./5pb. 
 - Plastic Memories is owned by MAGES./5pb.
