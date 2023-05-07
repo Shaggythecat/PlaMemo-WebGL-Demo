@@ -2,7 +2,7 @@
 This is to preserve the Plastic Memories Costume & Interaction Mode Web Demo.
 The demo can be accessed here: https://shaggythecat.github.io/PlaMemo-WebGL-Demo/webgl/index.html
 
-『プラスティック・メモリーズ』“ふれあい＆お着替えモード”のWeb体験版 (Japanese Title)
+『プラスティック・メモリーズ』“ふれあい＆お着替えモード”のWeb体験版
 ###
 ![image](https://user-images.githubusercontent.com/110912092/219759091-a48a26bf-c601-4555-b37f-6d4f7339e1ea.png)
 
