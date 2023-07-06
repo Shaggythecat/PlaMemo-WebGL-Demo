@@ -1040,7 +1040,8 @@ LoadCompressedFile(Module.memUrl, function(e) {
                         var t = this.options;
                         t.raw && t.windowBits >= 0 && t.windowBits < 16 && (t.windowBits = -t.windowBits, 0 === t.windowBits && (t.windowBits = -15)), !(t.windowBits >= 0 && t.windowBits < 16) || e && e.windowBits || (t.windowBits += 32), t.windowBits > 15 && t.windowBits < 48 && 0 === (15 & t.windowBits) && (t.windowBits |= 15), this.err = 0, this.msg = "", this.ended = !1, this.chunks = [], this.strm = new u, this.strm.avail_out = 0;
                         var n = a.inflateInit2(this.strm, t.windowBits);
-                        if (n !== d.Z_OK) throw new Error(l[n])
+                        if (n !== d.Z_OK) throw new Error(l[n]);
+                        this.header = new c, a.inflateGetHeader(this.strm, this.header)
                     };
                 h.prototype.push = function(e, t) {
                     var n, o, i, l, u, c = this.strm,
