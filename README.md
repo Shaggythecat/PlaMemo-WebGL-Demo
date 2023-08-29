@@ -1,8 +1,10 @@
 # Plastic Memories WebGL Trial Version 『プラスティック・メモリーズ』Web体験版
-This is to preserve the Plastic Memories Costume & Interaction Mode Web Demo.
+This Project aims to preserve and make the Plastic Memories Costume & Interaction Mode Web Demo, and hopefully add in the dialouge text from the
+Plastic Memories English Pacth released by the Isla Exacution Squad for PC and PS Vita.
+
 The demo can be accessed here: https://shaggythecat.github.io/PlaMemo-WebGL-Demo/webgl/index.html
 
-『プラスティック・メモリーズ』“ふれあい＆お着替えモード”のWeb体験版
+『プラスティック・メモリーズ』“ふれあい＆お着替えモード”のWeb体験版 (Japanese Title)
 ###
 ![image](https://user-images.githubusercontent.com/110912092/219759091-a48a26bf-c601-4555-b37f-6d4f7339e1ea.png)
 
@@ -13,6 +15,9 @@ at a specific offset.
 
 - When trying to scroll the game will throw an error but will continue to run.
 
-## Disclaimers
+## Fixed Issues
+- The game will not boot.
+
+## Disclamers
 - This project is not associated with or authorized by MAGES./5pb. 
 - Plastic Memories is owned by MAGES./5pb.
