@@ -1,289 +1,38 @@
-<!DOCTYPE html><html lang="ja"><head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-<meta http-equiv="Content-Language" content="ja">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Cache-Control" content="no-cache">
-<meta http-equiv="Expires" content="0">
-<meta name="format-detection" content="telephone=no">
-<meta name="format-detection" content="address=no">
-<meta name="viewport" content="target-densitydpi=device-dpi, width=1280, user-scalable=yes">
-
-<title>PlaMemo Unity Demo</title>
-<link rel="shortcut icon" href="favicon.ico">
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-
-<link rel="stylesheet" href="css/pc.css">
-
-<script async src="//www.googletagmanager.com/gtm.js?id=GTM-54XBBG"></script><script src="js/jquery.min.js"></script>
-<script src="js/createjs-2015.11.26.min.js"></script>
-<script src="js/jquery.easing.js"></script>
-<script src="js/is.js"></script>
-<script src="js/particles.min.js"></script>
-
-<script src="js/pc.js"></script>
-
-</head>
-<body class="body_system">
-<!-- loading begin -->
-<div class="loading" id="loading">
-	<div class="inner">
-		<div class="loading_bar" id="loading_bar"></div>
-	</div>
-</div>
-<!-- loading end -->
-
-<!-- container begin -->
-<div class="container">
-
-<!-- header begin -->
-<header class="header_global">
-	<div class="feed">
-		<div class="inner">
-			
-<div class="date">2023</div>
-<div class="text">
-<a href="https://game.mages.co.jp/topics/7822.html" target="_blank">出演声優の直筆サイン色紙が当たる！発売記念抽選会開催！</a> /
-<a href="../spec/">SPEC</a>を更新。限定版パッケージを公開しました。
-</div>
-
-		</div>
-	</div>
-	<div class="navfix_inner">
-		<nav>
-			<div class="inner">
-				<div class="psvita">PS Vita</div>
-				<ul id="nav" class="load">
-					<li class="nav_top"><a href="../" data-nav="top">PLASTIC-MEMORIES</a></li>
-<li class="nav_story"><a href="../story/" data-nav="story">STORY</a></li>
-<li class="nav_character"><a href="../character/" data-nav="character">CHARACTER</a></li>
-<li class="nav_system"><a href="../system/" data-nav="system">SYSTEM</a></li>
-<li class="nav_spec"><a href="../spec/" data-nav="spec">SPEC</a></li>				</ul>
-				<div class="share"></div>
-			</div>
-		</nav>
-	</div>
-</header>
-<!-- header end -->
-
-<script>
-var manifest = [
-  "../system/img/bg.jpg",
-  "../system/img/h1.png",
-  "../system/img/nav.png",
-  "../system/img/tex1.png",
-  "../system/img/tex2.png",
-  "../system/img/image1.jpg",
-  "../system/img/image2.jpg",
-  "../system/img/image3.jpg",
-  "../system/img/image4.jpg",
-  "../system/img/image5.jpg",
-  "../system/img/image6.jpg",
-  "../system/img/img0.jpg",
-]
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <style>
+      body {
+         background-color: rgb(0,0, 0);
+      }
+   </style>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Plastic Memories WebGL Demo</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+  </head>
+  <body class="template">
+    <p class="header"><span>Unity WebGL Player | </span>Plastic Memories WebGL Demo</p>
+    <div class="template-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="1080px" width="1540"></canvas>
+      <br>
+      <div></div>
+      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      <div class="title">Plastic Memories Costume & Interaction Mode Web Demo</div>
+    </div>
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "Release/webgl.data",
+    codeUrl: "Release/webgl.js",
+    memUrl: "Release/webgl.mem",
+    
+  };
 </script>
+<script src="Release/UnityLoader.js"></script>
 
-<!-- page begin -->
-
-<article class="page page_system">
-
-	<a id="schedule" class="anchor"></a>
-
-	<a id="fureai" class="anchor"></a>
-	<article class="fureai">
-		<div class="demo">
-			<div class="window">
-	    		<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="640px" width="480px"></canvas>
-	    		<h3>ふれあい＆お着替えモード WEB体験版</h3>
-	    		<div class="incompatible" id="incompatible">ご利用のブラウザではWEB体験版はご利用いただけません</div>
-	    		<a href="javascript:void(0);" class="splash" id="splash"></a>
-	    	</div>
-	    	<div class="notice">
-
-			■Contact & Costume Mode WEB Demo<br>
-			Isla's reaction changes depending on the action of poking and stroking.<br>
-			There are five places to touch: "head, torso, right arm, left arm, thigh"<br>
-			Reactions vary depending on location.<br>
-			Poking → click<br>
-			Stroking → click and drag left or right<br>
-			<br>
-			■How To Change Costume<br>
-			You can change costumes by clicking the costume icon<br>
-			at the bottom right of the screen.<br>
-            <br>
-            ■Higher Resolution Versions (Things will be broken)<br>
-            ※<a href="../PlaMemo-WebGL-Demo/webgl/index.html" target="_blank">1080p</a><br>
-			<br>
-	    	■Current Issues<br>
-	    	The demo cannot be modified to include English text due<br>
-	    	to a lack of tools and documentation for extracting and<br>
-            repackaging the Webgl format.<br>
-            
-	    	※If you can fix these issues open an issue in my <a href="https://github.com/Shaggythecat/test/issues" target="_blank">Github</a>.<br>
-	    	</div>
-    	</div>
-	</article>
-
-	<a id="okigae" class="anchor"></a>
-	<article class="okigae">
-		<h2>お気に入りの衣装でアイラとデート＜お着替えモード＞</h2>
-		<p>
-			お着替えモードでは、アイラに様々な衣装を着せることができる。
-			衣装はストーリー内で入手することができ、着替えさせた服でデートに出かけることも可能。
-			また、お気に入りの衣装を着させて、ふれあいモードで遊ぶことも。
-		</p>
-		<div class="image2" id="slider2">
-			<ul>
-				<li><img src="images/image5.jpg"></li>
-				<li><img src="images/image6.jpg"></li>
-			</ul>
-			<a href="javascript:void(0);" class="next"></a>
-			<a href="javascript:void(0);" class="prev"></a>
-		</div>
-	</article>
-
-	<a id="animation" class="anchor"></a>
-	<article class="animation">
-		<h2>アニメーションでより印象的に―</h2>
-		<p>
-			重要なイベントシーンでは、アニメによる演出がカットイン。
-			よりセンセーショナルな表現によって忘れられないワンシーンに。
-		</p>
-		<div class="image">
-			<img src="images/anime1.jpg">
-		</div>
-	</article>
-
-	<section class="notice"><br><br>※This project is not assoicated with or endosed by MAGES./5pb.</section>
-
-</article>
-<!-- page end -->
-
-<script>
-$(function(){
-	
-	var $obj_body = $("body");
-
-	IS.setScrollFunc("systemnavfix",function(){
-		if(IS.getParams().scrpos >= $("#system_nav").offset().top){
-			$obj_body.attr({"data-system-nav":"1"});
-		}else{
-			$obj_body.attr({"data-system-nav":"0"});
-		}
-	});
-
-	var slider = function(target){
-
-		var sliders = $("> ul",target);
-		var total = sliders.find("li").length - 1;
-		var current = 0;
-		var next = 0;
-		var offset = sliders.width();
-
-		next = current + 1;
-		$("li",sliders).eq(next).css({"left":offset+"px"});
-
-		$(".next",target).on("click",function(){
-			next = current + 1;
-			if(next > total){
-				next = 0;
-			}
-			$("li",sliders).eq(next).css({"left":offset+"px"});
-			$("li",sliders).eq(current).stop().animate({"left":"-"+offset+"px"},{duration:800,easing:"easeOutExpo"});
-			$("li",sliders).eq(next).stop().animate({"left":"0"},{duration:800,easing:"easeOutExpo"});
-			current = next;
-		});
-
-		$(".prev",target).on("click",function(){
-			next = current - 1;
-			if(next < 0){
-				next = total;
-			}
-			$("li",sliders).eq(next).css({"left":"-"+offset+"px"});
-			$("li",sliders).eq(current).stop().animate({"left":offset+"px"},{duration:800,easing:"easeOutExpo"});
-			$("li",sliders).eq(next).stop().animate({"left":"0"},{duration:800,easing:"easeOutExpo"});
-			current = next;
-		});
-
-	};
-
-	if(IS.isPc()){
-		slider($("#slider1"));
-		slider($("#slider2"));
-	}
-
-
-	IS.init = function(){
-		$obj_body.attr({"data-loaded":"1"});
-
-		var start = function(){
-			$("#splash").fadeOut(400,function(){
-				$("body").append('<scr'+'ipt src="./webgl/Release/UnityLoader.js"></scr'+'ipt>');
-			});
-		}
-
-		var ua = window.navigator.userAgent.toLowerCase();
-		if(ua.match(/chrome/) && IS.isPc() || ua.match(/firefox/) && IS.isPc()){
-			$("#splash").on("click",start);
-		}else{
-			$("#splash").hide();
-			$("#incompatible").show();
-		}
-
-		$("#loading").fadeOut();
-	}
-
-});
-
-var Module = {
-TOTAL_MEMORY: 268435456,
-errorhandler: null,		// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-compatibilitycheck: null,
-dataUrl: "./webgl/Release/webgl.data",
-codeUrl: "./webgl/Release/webgl.js",
-memUrl: "./webgl/Release/webgl.mem",
-};
-</script>
-
-
-<!-- footer_spec begin -->
-<article class="footer_spec">
-	<div class="inner">
-		<h6>製品情報</h6>
-		<dl>
-			<dt class="subtitle">PlayStation Vita & PC</dt>
-			<dd class="title">プラスティック・メモリーズ</dd>
-			<dt class="label genre">GENRE</dt>
-			<dd>Visual Novel</dd>
-			<dt class="label release">RELEASE</dt>
-			<dd>10/13/2016</dd>
-			<dt class="label price">PRICE</dt>
-			<dd>Physical 6,800円<span></span>／Specail 9,800円<span></span>／Download 6,000円<span></span></dd>
-			<dt class="label cero">CERO</dt>
-			<dd>C（15）</dd>
-		</dl>
-		<ul class>
-		</ul>
-	</div>
-</article>
-<!-- footer_spec end -->
-
-<!-- footer_catch begin -->
-
-<!-- footer_catch end -->
-
-<!-- footer begin -->
-
-<!-- footer end -->
-
-<!-- pagetop begin -->
-<div class="pagetop" id="pagetop"><a href="#"></a></div>
-<!-- pagetop end -->
-
-</div>
-<!-- container end -->
-
-
-
-
-</body></html>
+  </body>
+</html>
