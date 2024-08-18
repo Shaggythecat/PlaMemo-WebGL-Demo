@@ -2,7 +2,7 @@
 This Project aims to preserve and make the Plastic Memories Costume & Interaction Mode Web Demo, and hopefully add in the dialouge text from the
 Plastic Memories English Pacth released by the Isla Exacution Squad for PC and PS Vita.
 
-The demo can be accessed here: https://shaggythecat.github.io/PlaMemo-WebGL-Demo/webgl/index.html
+The demo can be accessed here: https://shaggythecat.github.io/PlaMemo-WebGL-Demo/index.html
 
 『プラスティック・メモリーズ』“ふれあい＆お着替えモード”のWeb体験版 (Japanese Title)
 ###
